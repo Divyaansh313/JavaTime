@@ -15,7 +15,11 @@ public class Main
 		    
 		    System.out.println(2 * y);
 		}
+	
+		
+		for (int y=5; y > 0; y--){
+		    
+		    System.out.println(2 * y);
+		}
 	}
 }
-
-
