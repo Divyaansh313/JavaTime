@@ -25,5 +25,12 @@ public class Main
 		    
 		    System.out.println((y * (y+1)) / 2); //This loop is for printing first 10 triangular numbers which simply means the number of objects that can be arranged in an equilateral triangle
 		}
+
+			String[] Family = {"Anil", "Deepti", "Aman", "Naina"};
+
+		for(String name : Family) {          //The colon":" here is for fetching the variable from the stringarray family
+
+		    System.out.println(name);
+		}
 	}
 }
