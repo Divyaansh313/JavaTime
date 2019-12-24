@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		List<String> Family = new ArrayList<String>();
+		
+		Family.add("Anil");
+		Family.add("Deepti");
+		Family.add("Aman");
+		Family.add("Naina");
+		
+		for(String name : Family){
+		System.out.println(name);
+		}
+		    
+		}
+}
+
+//incase we do not specify which type of objets are going to be in the string, we would end up getting an error since it would be a more generic type so the compiler wouldn't differentiate between object and   the specified datatype.
