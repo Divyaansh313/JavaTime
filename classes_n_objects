@@ -1,0 +1,20 @@
+public class Main
+{
+	public static void main(String[] args) {
+		
+		class User{
+		    
+		    int score;
+		    
+		}
+		
+		User dj = new User();
+		
+		dj.score = 10;
+		
+		System.out.println(dj.score);
+		
+		
+	}
+}
+
