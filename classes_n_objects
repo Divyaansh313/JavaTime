@@ -6,14 +6,29 @@ public class Main
 		    
 		    int score;
 		    
-		}
+		    public boolean hasWon() {
+
+		        if (score >= 100){
+		            return true;
+		        }
+		        else {
+		            return false;
+		        }
+		    }
+	
+	}
 		
 		User dj = new User();
 		
 		dj.score = 10;
 		
-		System.out.println(dj.score);
+		System.out.println(dj.hasWon());  //It will print false
 		
+		User Jack = new User();
+
+		Jack.score = 120;
+
+		System.out.println(Jack.hasWon());  //It will print true
 		
 	}
 }
