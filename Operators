@@ -14,7 +14,8 @@ public class Solution {
         double tip = meal_cost * tip_percent/100;
         double tax = meal_cost * tax_percent/100;
         double totalCost = meal_cost + tip + tax;
-        double TotalCost = (int)totalCost + 0.5;
+        
+	/*double TotalCost = (int)totalCost + 0.5;
         if (totalCost < TotalCost)
         {
             System.out.println((int)totalCost);
@@ -22,7 +23,10 @@ public class Solution {
         else
         {
             System.out.println((int)totalCost + 1);
-        }
+        }*/
+	
+	int TotalCost = (int)Math.round(totalCost); //Alternate and easy way to implement the round off function
+        System.out.println(TotalCost);
 
 
     }
