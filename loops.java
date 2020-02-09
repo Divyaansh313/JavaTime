@@ -71,3 +71,34 @@ public class Solution {
 
 
 //Problem: Making a series
+
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            int x = 0;
+            int s =0;
+            for(int j=0; j<n; j++)
+            {
+            int square = (int)Math.pow(2,j);
+
+            s = s + square*b;
+            x = a + s;
+            System.out.print(x + " ");
+            }
+
+            System.out.println("");
+
+        }
+        in.close();
+    }
+}
+
+
