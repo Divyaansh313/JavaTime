@@ -34,3 +34,6 @@ public class Main
 		}
 	}
 }
+
+
+//Problem : Given an integer N,(2<=N<=20), print its first 10 multiples. Each multiple N x i (where 1<=i<=10) should be printed on a new line in the form: N x i = result. 
