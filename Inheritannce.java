@@ -88,5 +88,58 @@ public class Solution
 	
 
 
-	
+import java.util.*;
+
+public class Vehicle
+{
+	//private int maxSpeed;
+	int minSpeed;
+	boolean isTheCarOn;
+
+	public Vehicle()
+	{
+	//maxSpeed = 180;
+	minSpeed = 0;
+	isTheCarOn = false;
+	}
+}
+
+class Car extends Vehicle 
+{
+	String modelType;
+	String modelName;
+	String colour;
+public Car()
+{
+	super();
+	modelType = "Hachback";
+	modelName = "Baleno";
+	colour = "Blue";
+}
+
+public void Display()
+{
+
+//Displaying every property
+
+//System.out.println("Max Speed: " + maxSpeed); //Accessing private member of the super class
+System.out.println("Min Speed: " + minSpeed);
+System.out.println("Is the car on: " + isTheCarOn);
+System.out.println("The Model type is: " + modelType);
+System.out.println("The Model name is: " + modelName);
+System.out.println("The colour is: " + colour);
+}
+
+public static void main(String args[])
+{
+	Car myCar = new Car();
+	myCar.Display();
+}
+
+}
+
+
+
+
+		
 	
