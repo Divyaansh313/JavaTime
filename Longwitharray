@@ -1,1 +1,58 @@
 //Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static void miniMaxSum(int[] arr) {
+        long MinSum=0, MaxSum=0, min=0, max=0;
+        min=arr[0];
+        max=min;
+        MinSum=max;
+        MaxSum=MinSum;
+        int size=arr.length;
+        for(int i=1; i<size; i++)
+        {
+            if(arr[i]<min)
+            {
+                min=arr[i];
+            }
+            if(arr[i]>max)
+            {
+                max=arr[i];
+            }
+            MinSum+=arr[i];
+            MaxSum+=arr[i];
+        }
+        MinSum=MinSum-max;
+        MaxSum=MaxSum-min;
+        System.out.println(MinSum+" "+MaxSum);
+
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+
+        String[] arrItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = 0; i < 5; i++) {
+            int arrItem = Integer.parseInt(arrItems[i]);
+            arr[i] = arrItem;
+        }
+
+        miniMaxSum(arr);
+
+        scanner.close();
+    }
+}
+
