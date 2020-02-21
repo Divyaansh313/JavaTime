@@ -142,4 +142,29 @@ public static void main(String args[])
 
 
 		
-	
+//Another problem
+
+
+import java.util.*;
+
+class Worker
+{
+	String name;
+	double salary_rate;
+	double weekPay;
+	int hours;
+
+	Worker(String name, double salary_rate)
+	{
+	this.name = name;
+	this.salary_rate = salary_rate;
+	}
+
+	void ComPay(int hours)
+	{
+	this.hours = hours;
+	weekPay = hours*salary_rate;
+	System.out.println(weekPay);
+	}
+}
+
