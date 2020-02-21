@@ -168,3 +168,17 @@ class Worker
 	}
 }
 
+class DailyWorker extends Worker
+{
+	DailyWorker(String D_name,double rate)
+	{
+	super(D_name,rate);
+	}
+
+	void ComPay(int hours, int noOfDays)
+	{
+	this.hours = hours;
+	weekPay = hours*noOfDays*salary_rate;
+	System.out.println(weekPay);
+	}
+}
