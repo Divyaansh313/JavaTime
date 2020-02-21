@@ -197,3 +197,17 @@ class SalariedWorker extends Worker
 	System.out.println(weekPay);
 	}
 }
+
+public class WorkerSalary
+{
+	public static void main(String args[])
+	{
+
+	DailyWorker W1 = new DailyWorker("Bhupesh",10.0);
+	SalariedWorker W2 = new SalariedWorker("Ramu",7.0);
+
+	W1.ComPay(9, 6);
+	W2.ComPay();
+
+	}
+}
