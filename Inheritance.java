@@ -104,3 +104,16 @@ salary = salary + IncreaseInSalary;
 System.out.println("New salary is: " + salary);
 }
 }
+
+
+class Manager extends Employee
+{
+String department;
+Manager(String name, int empid, double salary, String department)
+{
+super(name, empid, salary);
+this.department = department;
+System.out.println("Name is: " + name + "and id is: " + empid + "and salary is: " + salary);
+System.out.print("and department is: " + department);
+}
+}
