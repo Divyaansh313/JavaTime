@@ -91,3 +91,8 @@ String EmployeeName()
 {
 	return name;
 }
+
+double EmployeeSalary()
+{
+return salary;
+}
