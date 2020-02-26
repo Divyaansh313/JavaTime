@@ -86,3 +86,8 @@ this.name = name;
 this.empid =empid;
 this.salary =salary;
 }
+
+String EmployeeName()
+{
+	return name;
+}
