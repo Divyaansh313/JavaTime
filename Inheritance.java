@@ -41,3 +41,17 @@ class UrgentTrunkCalls extends TrunkCalls
 	System.out.println(charges);
 	}
 }
+
+
+public class Bill
+{
+	public static void main(String args[])
+	{
+	OrdinaryTrunkCalls call1 = new OrdinaryTrunkCalls();
+	call1.charges(39.10);
+	LightningTrunkCalls call2 = new LightningTrunkCalls();
+	call2.charges(10.40);
+	UrgentTrunkCalls call3 = new UrgentTrunkCalls();
+	call3.charges(10.40);
+	}
+}
