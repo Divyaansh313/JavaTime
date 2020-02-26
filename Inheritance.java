@@ -79,3 +79,10 @@ name = " ";
 empid = 0;
 salary = 0.0;
 }
+
+Employee(String name, int empid, double salary)
+{
+this.name = name;
+this.empid =empid;
+this.salary =salary;
+}
