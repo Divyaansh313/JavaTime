@@ -96,3 +96,11 @@ double EmployeeSalary()
 {
 return salary;
 }
+
+void IncreaseSalary(double percentage)
+{
+double IncreaseInSalary = (percentage/100) * salary;
+salary = salary + IncreaseInSalary;
+System.out.println("New salary is: " + salary);
+}
+}
