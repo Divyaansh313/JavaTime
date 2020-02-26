@@ -30,3 +30,14 @@ class LightningTrunkCalls extends TrunkCalls
 	System.out.println(charges);
 	}
 }
+
+class UrgentTrunkCalls extends TrunkCalls
+{
+	void charges(double duration)
+	{
+	rate = 5.0;
+	this.duration = duration;
+	double charges = rate*duration;
+	System.out.println(charges);
+	}
+}
