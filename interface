@@ -52,3 +52,12 @@ public void meth2(){
 	System.out.println("the difference is: " + diff);
 }
 }
+
+public class PlusMinus{
+	public static void main(String args[])
+	{
+	MyClass obj1 = new MyClass();
+	obj1.meth1();
+	obj1.meth2();
+	}
+}
