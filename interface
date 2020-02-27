@@ -4,3 +4,14 @@ interface test{
 	
 	void square(int number);
 }
+
+class Arithmetic implements test{
+
+	public void square(int number) {
+
+		int square = number*number;
+		System.out.println("The square is: " + square);
+
+	}
+
+}
