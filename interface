@@ -29,4 +29,13 @@ public class ToTestInt {
 
 //new problem 
 
+import java.util.*;
 
+interface A {
+
+	int a = 5;
+	int b = 7;
+	void meth1();
+	void meth2();
+
+}
