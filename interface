@@ -39,3 +39,16 @@ interface A {
 	void meth2();
 
 }
+
+class MyClass implements A{
+
+public void meth1(){
+	int sum = a+b;
+	System.out.println("the sum is: " + sum);
+}
+
+public void meth2(){
+	int diff = a-b;
+	System.out.println("the difference is: " + diff);
+}
+}
