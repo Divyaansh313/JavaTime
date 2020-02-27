@@ -1,0 +1,6 @@
+import java.util.*;
+
+interface test{
+	
+	void square(int number);
+}
