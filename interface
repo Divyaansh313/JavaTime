@@ -15,3 +15,12 @@ class Arithmetic implements test{
 	}
 
 }
+
+
+public class ToTestInt {
+	public static void main(String args[]) {
+		Arithmetic num1 = new Arithmetic();
+		num1.square(5);
+	}
+
+}
