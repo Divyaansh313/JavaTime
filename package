@@ -1,0 +1,12 @@
+//in the package folder create a java file and compile it 
+
+package  Balance;
+
+public class Account
+{
+	public void Display_Balance(double balance)
+	{
+	System.out.println("The balance is: " + balance);
+	}
+}
+
