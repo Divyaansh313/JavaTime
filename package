@@ -41,3 +41,14 @@ public class Addition{
 
 
 }
+
+import java.util.*;
+import pkg1.Addition;
+
+class Calculation3{
+	public static void main(String args[])
+	{
+	Addition add1 = new Addition();
+	add1.sum(5,9);
+	}
+}
