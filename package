@@ -12,3 +12,16 @@ public class Account
 
 
 // now create a java project and import the class in package
+
+import java.util.*;
+import Balance.*;
+
+public class MyAccount
+{
+	public static void main(String args[])
+	{
+	Account Account1 = new Account();
+	Account1.Display_Balance(50000.00);
+
+	}
+}
