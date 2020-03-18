@@ -178,3 +178,7 @@ public class Manage{
 			zoo1.addAnimal(b1);
 		}}
 		break;
+
+		case 2:
+		zoo1.displayAnimal();
+		break;
