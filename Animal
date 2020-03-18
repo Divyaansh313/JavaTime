@@ -1,1 +1,12 @@
 //A menu driven program to show inheritance and functions related to zoo
+
+import java.util.*;
+
+abstract class Animal
+{
+	String type;
+	public Animal() {}
+	abstract String getName();
+	abstract int getAge();
+	abstract void talk();
+}
