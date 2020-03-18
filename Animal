@@ -127,3 +127,12 @@ class Zoo {
 		System.out.println("Type is "+a.type);
 		}
 	}
+
+		public void feedingTime()
+	{
+	for(int i=0;i<count;++i)
+	    {
+		animals[i].talk();
+	    }
+	}
+}
