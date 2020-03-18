@@ -151,3 +151,30 @@ public class Manage{
 	System.out.println("4. Trigger feeding Time.");
 	Scanner myscan = new Scanner(System.in);
 	int number = myscan.nextInt();
+
+		switch(number) {
+	case 1:{
+		myscan.nextLine();
+		System.out.println("enter type: ");
+                 String myAnimal = myscan.nextLine();
+		System.out.println("enter name: ");
+		String animalName = myscan.nextLine();
+		System.out.println("enter age: ");
+		int animalAge = myscan.nextInt();
+
+		if(myAnimal.equals("Tiger"))
+		{
+			Animal t1=new Tiger(animalName,animalAge);
+			zoo1.addAnimal(t1);
+		}
+		else if(myAnimal.equals("Elephant"))
+		{
+			Animal e1=new Elephant(animalName,animalAge);
+			zoo1.addAnimal(e1);
+		}
+		else if(myAnimal.equals("Bull"))
+		{
+			Animal b1=new Bull(animalName,animalAge);
+			zoo1.addAnimal(b1);
+		}}
+		break;
