@@ -62,3 +62,29 @@ class Elephant extends Animal
 		return age;
 	}
 }
+
+class Bull extends Animal
+{
+      String name;
+      int age;
+	public Bull(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+		this.type = "Herbivore";
+	}
+	void talk()
+	{
+		System.out.println("The name of the animal is " + name);
+		System.out.println("The age of the animal is " + age);
+		System.out.println("The type of the animal is " + type);
+	}
+	String getName()
+	{
+		return name;
+	}
+	int getAge()
+	{
+		return age;
+	}
+}
