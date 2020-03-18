@@ -10,3 +10,29 @@ abstract class Animal
 	abstract int getAge();
 	abstract void talk();
 }
+
+class Tiger extends Animal
+{
+      String name;
+      int age;
+	public Tiger(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+		this.type = "Carnivore";
+	}
+	void talk()
+	{
+		System.out.println("The name of the animal is " + name);
+		System.out.println("The age of the animal is " + age);
+		System.out.println("The type of the animal is " + type);
+	}
+	String getName()
+	{
+		return name;
+	}
+	int getAge()
+	{
+		return age;
+	}
+}
