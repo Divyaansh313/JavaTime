@@ -136,3 +136,18 @@ class Zoo {
 	    }
 	}
 }
+
+public class Manage{
+	public static void main(String args[])
+	{
+
+	Zoo zoo1 = new Zoo();
+	do{
+
+	System.out.println("Choose one of the options.");
+	System.out.println("1. Add a new animal to the zoo: a)Tiger	b)Elephant	c)Bull");
+	System.out.println("2. Display all animals currently in the zoo.");
+	System.out.println("3. Display the name and age of the animal in a selected type.");
+	System.out.println("4. Trigger feeding Time.");
+	Scanner myscan = new Scanner(System.in);
+	int number = myscan.nextInt();
