@@ -88,3 +88,14 @@ class Bull extends Animal
 		return age;
 	}
 }
+
+class Zoo {
+
+	int count = 0;
+	Animal animals[] = new Animal[999];
+
+	public void addAnimal(Animal a)
+	{
+	animals[count]=a;
+	count++;
+	}
