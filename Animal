@@ -195,6 +195,6 @@ public class Manage{
 		break;
 		}
 		}
-		while(true);
+		while(true);//loop closed
 	}
 }
