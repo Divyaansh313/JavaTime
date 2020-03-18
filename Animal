@@ -189,3 +189,12 @@ public class Manage{
     		zoo1.displayAnimal(AnimalType);
 		}
 		break;
+
+			case 4:
+		zoo1.feedingTime();
+		break;
+		}
+		}
+		while(true);
+	}
+}
