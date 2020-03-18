@@ -111,3 +111,19 @@ class Zoo {
 		System.out.println("Type is "+a.type);
 		}
 	}
+
+
+	public void displayAnimal(String type)
+	{
+
+       	Animal a;
+	for(int i=0; i<count; i++)
+		{
+		a=animals[i];
+		if(!(a.type).equalsIgnoreCase(type))
+		continue;
+
+		System.out.println("Name is "+a.getName());
+		System.out.println("Type is "+a.type);
+		}
+	}
