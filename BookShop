@@ -87,3 +87,9 @@ class Tape extends Publication implements Sales
 	}
 }
 
+//Made an Interface
+interface Sales
+{
+	public void InputSales();
+	public void DisplaySales();
+}
