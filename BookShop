@@ -1,1 +1,19 @@
 //A program to show inheritance in the form of a BookShop
+
+class Publication
+{
+	String title;
+	double price;
+
+//Constructor of Publication with parameters
+    public Publication(String title, double price)
+    	{
+		this.title=title;
+		this.price=price;
+	}
+	public void display()
+	{
+		System.out.println("The Title of the Book: " + title);
+		System.out.println("The price of the Book: " + price);
+	}
+}
