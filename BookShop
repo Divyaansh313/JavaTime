@@ -17,3 +17,16 @@ class Publication
 		System.out.println("The price of the Book: " + price);
 	}
 }
+
+//Making Child class Book of parent class Publication which is also implementing interface Sales
+class Book extends Publication implements Sales
+{
+	int count;
+	static double sales;
+
+//Constructor of Book with parameters
+	public Book(String title,double price,int count)
+	{
+		super(title,price);
+		this.count=count;
+	}
