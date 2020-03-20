@@ -64,3 +64,26 @@ class Tape extends Publication implements Sales
 		super(title,price);
 		this.time= time;
 	}
+
+
+//Display function
+	public void display()
+	{
+		super.display();
+		System.out.println("Playing time is " + time + " hrs");
+	}
+
+
+//Function for Sales
+	public void InputSales()
+	{
+		sales += price;
+	}
+
+//Function for displaying Sales
+	public void DisplaySales()
+	{
+		System.out.println("The sales of Tapes currently are: " + sales);
+	}
+}
+
