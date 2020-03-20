@@ -50,3 +50,17 @@ class Book extends Publication implements Sales
 		System.out.println("The sales of Books currently are: " + sales);
 	}
 }
+
+//Making Child class Tape of parent class Publication which is also implementing interface Sales
+class Tape extends Publication implements Sales
+{
+    double time;
+    static double sales;
+
+
+//Constructor of Tape with parameters
+	public Tape(String title, double price, double time)
+	{
+		super(title,price);
+		this.time= time;
+	}
