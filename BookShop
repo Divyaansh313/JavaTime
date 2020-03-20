@@ -93,3 +93,23 @@ interface Sales
 	public void InputSales();
 	public void DisplaySales();
 }
+
+public class BookShop
+{
+	public static void main(String args[])
+	{
+		Book book1 = new Book("It's not your Story",150,220);
+		Book book2 = new Book("The Fault in our Stars",300,450);
+		Tape tape1 = new Tape("The Story of my life",500,4);
+		Tape tape2 = new Tape("It's You",280,3.5);
+//Made Objects and called functions from them
+		book1.InputSales();
+		book1.DisplaySales();
+		book2.InputSales();
+		book2.DisplaySales();
+		tape1.InputSales();
+		tape1.DisplaySales();
+		tape2.InputSales();
+		tape2.DisplaySales();
+	}
+}
