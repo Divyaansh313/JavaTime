@@ -30,3 +30,23 @@ class Book extends Publication implements Sales
 		super(title,price);
 		this.count=count;
 	}
+
+	//Display function
+	public void display()
+	{
+		super.display();
+		System.out.println("Number of pages are: "+count);
+	}
+
+//Function for Sales
+	public void InputSales()
+	{
+		sales += price;
+	}
+
+//Function for displaying Sales
+	public void DisplaySales()
+	{
+		System.out.println("The sales of Books currently are: " + sales);
+	}
+}
