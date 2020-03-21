@@ -164,3 +164,12 @@ public class MyShape extends Rectangle
 		System.exit(1);
 	    }
 	}
+
+	//Function for checking if rectangle is a square
+	public boolean CheckSquare()
+	{
+		if(length==breadth)
+		return true;
+		else
+		return false;
+	}
