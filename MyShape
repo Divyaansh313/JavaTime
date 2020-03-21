@@ -173,3 +173,10 @@ public class MyShape extends Rectangle
 		else
 		return false;
 	}
+
+	//Calling area function of parent class
+   public double area()
+   	{
+		double area=super.area();
+   		return area;
+   	}
