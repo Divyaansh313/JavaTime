@@ -200,3 +200,18 @@ public class MyShape extends Rectangle
 		lengtharr[i]=scan.nextDouble();
 		breadtharr[i]=scan.nextDouble();
 	    	}
+
+
+		MyShape shape1 = new MyShape(lengtharr,breadtharr);
+
+		//Checking if shape is a Rectangle
+		boolean check = shape1.CheckRectangle();
+   		if(check==false)
+   		{
+   		System.out.println("This is not a rectangle");
+   		System.exit(1);
+	    	}
+		else
+		{
+		System.out.println("This is a rectangle");
+		}
