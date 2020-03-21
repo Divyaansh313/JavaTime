@@ -55,3 +55,9 @@ class Rectangle
 	{
 		return breadth;
 	}
+
+	//Function for calculating Area
+	public double area()
+	{
+		return length*breadth;
+	}
