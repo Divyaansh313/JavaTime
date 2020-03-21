@@ -32,3 +32,17 @@ class Rectangle
 		    System.out.println(e.getMessage());
 	   	}
     	}
+
+	    	public void setBreadth(double breadth)
+	{
+	    try
+	    {
+		    if(breadth<0.0 || breadth>20.0)
+		    throw new CustomException("Invalid value");
+		    this.breadth = breadth;
+		}
+		catch(CustomException e)
+		{
+			System.out.println(e.getMessage());
+	    	}
+	}
