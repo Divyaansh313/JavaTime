@@ -180,3 +180,10 @@ public class MyShape extends Rectangle
 		double area=super.area();
    		return area;
    	}
+
+	//Calling perimeter function of parent class
+   	public double perimeter()
+   	{
+		double myPerimeter = super.perimeter();
+   		return myPerimeter;
+	}
