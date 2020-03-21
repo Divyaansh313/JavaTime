@@ -46,3 +46,12 @@ class Rectangle
 			System.out.println(e.getMessage());
 	    	}
 	}
+
+		public double getLength()
+	{
+		return length;
+	}
+	public double getBreadth()
+	{
+		return breadth;
+	}
