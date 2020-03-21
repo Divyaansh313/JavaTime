@@ -61,3 +61,11 @@ class Rectangle
 	{
 		return length*breadth;
 	}
+
+	//Function for calculating perimeter
+	public double perimeter()
+	{
+		return 2*(length+breadth);
+	}
+
+}
