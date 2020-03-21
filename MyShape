@@ -215,3 +215,23 @@ public class MyShape extends Rectangle
 		{
 		System.out.println("This is a rectangle");
 		}
+
+				//Calculating length , breadth, area and perimeter of the rectangle
+		shape1.Length();
+	    	shape1.Breadth();
+	    	System.out.println("The area is: "+ shape1.area());
+	    	System.out.println("The perimeter is: "+ shape1.perimeter());
+
+		//Checking if the rectangle is square
+		check = shape1.CheckSquare();
+	    	if(check==false)
+	    	{
+   	      	System.out.println("The rectangle is not a square");
+	    	}
+		else
+		{
+		System.out.println("The rectangle is a square");
+	    	}
+	    	scan.close();
+   	}
+}
