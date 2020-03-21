@@ -109,3 +109,11 @@ public class MyShape extends Rectangle
 			verifyValues(lengtharr[i]);
 			verifyValues(breadtharr[i]);
 		}
+
+				for(int i=0;i<4;++i)
+		{
+			x[i] = lengtharr[i];
+			y[i] = breadtharr[i];
+		}
+
+	}
