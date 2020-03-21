@@ -102,3 +102,10 @@ public class MyShape extends Rectangle
 			System.exit(1);
 		    	}
 		}
+
+				//Now checking if the value is greater than 20
+		for(int i=0;i<4;++i)
+		{
+			verifyValues(lengtharr[i]);
+			verifyValues(breadtharr[i]);
+		}
