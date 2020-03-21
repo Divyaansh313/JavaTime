@@ -117,3 +117,14 @@ public class MyShape extends Rectangle
 		}
 
 	}
+
+		public void Length()
+	{
+        	if(Math.sqrt((x[0]-x[3])*(x[0]-x[3])+(y[0]-y[3])*(y[0]-y[3]))==0)
+      		{
+        	System.out.println("Invalid length");
+        	System.exit(0);
+	  	}
+	  	length=Math.sqrt((x[0]-x[3])*(x[0]-x[3])+(y[0]-y[3])*(y[0]-y[3]));
+		//Calculating length by formula ((x2-x1)^2 + (y2-y1)^2) and square root of this
+	}
