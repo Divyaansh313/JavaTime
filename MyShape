@@ -1,1 +1,19 @@
 //Program for checking if the shape is a rectangle and further a square
+
+class Rectangle
+{
+	double length;
+	double breadth;
+
+	public Rectangle()
+	{
+		length=1.0;
+		breadth=1.0;
+	}
+
+
+	public Rectangle(double myLength, double myBreadth)
+	{
+		setLength(myLength);
+		setBreadth(myBreadth);
+	}
