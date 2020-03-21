@@ -150,3 +150,17 @@ public class MyShape extends Rectangle
 		else
 		return false;
 	}
+
+	   public void verifyValues(double side)
+   {
+	   try
+	   {
+	   	if(side>20.0)
+	   	throw new CustomException("Invalid value");
+	   	}
+	   	catch(CustomException e)
+	   	{
+		System.out.println(e.getMessage());
+		System.exit(1);
+	    }
+	}
