@@ -139,3 +139,14 @@ public class MyShape extends Rectangle
 	  	breadth=Math.sqrt((x[0]-x[1])*(x[0]-x[1])+(y[0]-y[1])*(y[0]-y[1]));
 		//Calculating breadth by formula ((x2-x1)^2 + (y2-y1)^2) and square root of this
    	}
+
+	    	public boolean CheckRectangle()
+    	{
+		double first =Math.ceil(Math.sqrt((x[0]-x[2])*(x[0]-x[2])+(y[0]-y[2])*(y[0]-y[2])));
+		double second=Math.ceil(Math.sqrt((x[1]-x[3])*(x[1]-x[3])+(y[1]-y[3])*(y[1]-y[3])));
+		//Math.ceil is used for approximation of values so that a minute difference in length and breadth is not considered
+		if(first==second)
+		return true;
+		else
+		return false;
+	}
