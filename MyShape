@@ -17,3 +17,18 @@ class Rectangle
 		setLength(myLength);
 		setBreadth(myBreadth);
 	}
+
+		public void setLength(double length)
+	{
+		try
+		{
+		    if(length<0.0 || length>20.0)
+		    throw new CustomException("Invalid value");
+		    this.length = length;
+		}
+
+		catch(CustomException e)
+		{
+		    System.out.println(e.getMessage());
+	   	}
+    	}
