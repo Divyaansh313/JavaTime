@@ -1,1 +1,19 @@
 //Creation of a program of a bank
+
+import java.util.*;
+
+//Creating an Account class with properties
+class Account{
+  String customerName="";
+  String customerAccountType="";
+  static int accountNumber=0;
+  int customerAccountNumber;
+  float balance;
+
+//Parameterised constructor of Account class
+     Account(String name,String acctype){
+       customerName=name;
+       customerAccountType=acctype;
+
+       accountNumber++;
+     }
