@@ -137,3 +137,16 @@ public class MyAccount{
       System.out.println("3 -Show Details of Account");
        System.out.println(myaccount.customerAccountType.equals("saving")?"4 -Cash withdrawal":"4 -checkBook");
       int num1=scan.nextInt();
+
+            switch(num1){
+        case 1:
+          myaccount.DisplayBalance();
+          break;
+        case 2:{
+          System.out.println("\nEnter Amount accordingly: ");
+            myamount=scan.nextFloat();
+          myaccount.Deposit(myamount);
+        }break;
+        case 3:
+          myaccount.showDetails();
+          break;
