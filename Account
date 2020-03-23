@@ -72,3 +72,12 @@ class CurrentAccount extends Account{
 
      customerAccountNumber=accountNumber;
   }
+
+  //Function of Deposition of money
+  void Deposit(float x)
+  {
+
+      balance=balance+x;
+      if(balance>minimum_balance)
+       penalty="false";
+  }
