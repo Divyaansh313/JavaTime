@@ -81,3 +81,22 @@ class CurrentAccount extends Account{
       if(balance>minimum_balance)
        penalty="false";
   }
+
+  //Function for checking passbook
+  void checkBook(float x){
+
+     if(balance>x){
+      balance=balance-x;
+    if(balance<minimum_balance&&!penalty.equals("paid"))
+       penalty="true";
+    }
+    else if(balance<x)
+     System.out.println("Insufficent balance in your account");
+
+
+     if(penalty.equals("true")){
+      balance=balance-200;
+      penalty="paid";
+    }
+  }
+}
