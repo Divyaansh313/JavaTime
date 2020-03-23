@@ -29,3 +29,11 @@ class Account{
  {
     balance=balance+x;
  }
+
+
+//Function for showing details of any customer
+ void showDetails()
+ {
+   System.out.println(customerName+","+customerAccountType+","+customerAccountNumber);
+ }
+}
