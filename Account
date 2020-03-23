@@ -100,3 +100,16 @@ class CurrentAccount extends Account{
     }
   }
 }
+
+public class MyAccount{
+   public static void main(String args[]){
+ Scanner scan=new Scanner(System.in);
+     String y="";
+     float myamount;
+ Account myaccount=null;
+
+    do{
+     System.out.println("Choose any one :");
+     System.out.println("1 -Do you already have an account?");
+     System.out.println("2 -Create a new account for me!!");
+     int option=scan.nextInt();
