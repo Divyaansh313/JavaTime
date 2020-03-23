@@ -17,3 +17,15 @@ class Account{
 
        accountNumber++;
      }
+
+     //Function for displaying balance
+  void DisplayBalance()
+  {
+    System.out.println("Balance: "+balance);
+  }
+
+//Function for Depositing amount
+ void Deposit(float x)
+ {
+    balance=balance+x;
+ }
