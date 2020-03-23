@@ -59,3 +59,16 @@ class SavingAccount extends Account{
 
 
 }
+
+//Creating child class CurrentAccount of parent class Account
+class CurrentAccount extends Account{
+  float minimum_balance=1500.00f;
+   String penalty="false";
+
+//Parameterised constructor of CurrentAccount class
+  CurrentAccount(String name,String acctype)
+  {
+    super(name,acctype);
+
+     customerAccountNumber=accountNumber;
+  }
