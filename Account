@@ -37,3 +37,13 @@ class Account{
    System.out.println(customerName+","+customerAccountType+","+customerAccountNumber);
  }
 }
+
+//Creating child class SavingAccount of parent class Account
+class SavingAccount extends Account{
+
+//Parameterised constructor of SavingAccount class
+  SavingAccount(String name,String acctype)
+  {
+    super(name,acctype);
+     customerAccountNumber=accountNumber;
+  }
