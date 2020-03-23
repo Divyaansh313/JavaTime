@@ -47,3 +47,15 @@ class SavingAccount extends Account{
     super(name,acctype);
      customerAccountNumber=accountNumber;
   }
+
+  //Function of withdrawal of money
+  void Withdrawal(float x)
+  {
+    if(balance>x)
+     balance=balance-x;
+    else
+     System.out.println("There is insufficent balance in your account");
+  }
+
+
+}
