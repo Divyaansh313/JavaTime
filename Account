@@ -130,3 +130,10 @@ public class MyAccount{
            myaccount=new CurrentAccount(name,"current");
        }
      }
+
+         else if(option==1){
+      System.out.println("\n\n1 -Check your Balance");
+      System.out.println("2 -Deposit your Cash");
+      System.out.println("3 -Show Details of Account");
+       System.out.println(myaccount.customerAccountType.equals("saving")?"4 -Cash withdrawal":"4 -checkBook");
+      int num1=scan.nextInt();
