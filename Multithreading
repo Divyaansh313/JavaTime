@@ -38,3 +38,11 @@ class multi implements Runnable
 		System.out.println("This is a runnable interface after threading completed.");
 	}
 }
+
+class threadingusingrunnableinterface {
+	threadingusingrunnableinterface(){
+	multi m=new multi();
+	Thread t1=new Thread(m);
+	t1.start();
+	}
+}
