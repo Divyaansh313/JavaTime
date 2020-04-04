@@ -9,3 +9,14 @@ class MyClass extends Thread
 	}
 	}
 }
+
+class MyClass1 extends Thread
+{
+	public void run()
+	{
+	for(Integer i=0;i<3;i++)
+	{
+	System.out.println("MyClass1");
+	}
+	}
+}
