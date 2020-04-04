@@ -30,3 +30,11 @@ class threadingdemo {
 	obj2.start();
 	}
 }
+
+class multi implements Runnable
+{
+	public void run()
+	{
+		System.out.println("This is a runnable interface after threading completed.");
+	}
+}
