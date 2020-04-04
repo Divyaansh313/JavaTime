@@ -46,3 +46,13 @@ class threadingusingrunnableinterface {
 	t1.start();
 	}
 }
+
+public class Threadingconcept {
+
+	public static void main(String[] args) {
+		threadingdemo obj = new threadingdemo();
+		threadingusingrunnableinterface obj1=new threadingusingrunnableinterface();
+
+	}
+
+}
