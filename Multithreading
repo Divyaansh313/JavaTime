@@ -20,3 +20,13 @@ class MyClass1 extends Thread
 	}
 	}
 }
+
+class threadingdemo {
+	threadingdemo()
+	{
+	MyClass obj1=new MyClass();
+	MyClass1 obj2=new MyClass1();
+	obj1.start();
+	obj2.start();
+	}
+}
