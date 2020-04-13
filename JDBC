@@ -9,3 +9,18 @@ class First_JDBC
         String url = "jdbc:mysql://sqldatabase.cecptglr57pt.us-east-1.rds.amazonaws.com:3306/firstdb"; 
         String user = "admin"; 
         String pass = "admin12345";
+
+	 Connection con=null;
+		Statement st=null;
+
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //Reference to connection interface
+            con = DriverManager.getConnection(url,user,pass);
+		      System.out.println("connection successfull!");
+
+			st = con.createStatement();
+
+
