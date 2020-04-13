@@ -1,2 +1,11 @@
 "Program to implement JDBC in Java"
-
+import java.sql.*; 
+import java.util.*; 
+class First_JDBC 
+{ 
+    public static void main(String a[]) 
+    { 
+        //Creating the connection 
+        String url = "jdbc:mysql://sqldatabase.cecptglr57pt.us-east-1.rds.amazonaws.com:3306/firstdb"; 
+        String user = "admin"; 
+        String pass = "admin12345";
