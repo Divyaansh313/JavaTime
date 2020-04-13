@@ -60,3 +60,8 @@ class First_JDBC
 
            System.out.println("closing connection...");
 		   con.close();
+
+		           }catch(SQLException se){
+
+			 se.printStackTrace();
+		}
