@@ -23,4 +23,15 @@ class First_JDBC
 
 			st = con.createStatement();
 
-
+				//create table query
+			 String sql = "CREATE TABLE EMPLOYEE " +
+                   "(id INTEGER not NULL, " +
+                   " Name VARCHAR(255), " + 
+                   " Age INTEGER, " + 
+				   " DEPT VARCHAR(255), " +
+				   " SALARY INTEGER, " +
+                   " PRIMARY KEY ( id ))"; 
+		    
+		    			
+			System.out.println("creating table in a database...");
+			st.executeUpdate(sql);
