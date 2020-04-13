@@ -35,3 +35,28 @@ class First_JDBC
 		    			
 			System.out.println("creating table in a database...");
 			st.executeUpdate(sql);
+
+						//insering data into table
+			System.out.println("insering data into table");
+
+			 sql = "INSERT INTO EMPLOYEE " +
+                   "VALUES (1, 'Sam',25,'Sales',80000)";
+                st.executeUpdate(sql);
+			 sql = "INSERT INTO EMPLOYEE " +
+                   "VALUES (2, 'emily',24,'Management',850000)";
+                st.executeUpdate(sql);
+			sql = "INSERT INTO EMPLOYEE " +
+                   "VALUES (3, 'joe',22,'IT',780000)";
+                st.executeUpdate(sql);
+			sql = "INSERT INTO EMPLOYEE " +
+                   "VALUES (4, 'doe',20,'Logistics',700000)";
+                st.executeUpdate(sql);
+			sql = "INSERT INTO EMPLOYEE " +
+                   "VALUES (5, 'nina',26,'Public Relations',750000)";
+                st.executeUpdate(sql);
+
+
+
+
+           System.out.println("closing connection...");
+		   con.close();
