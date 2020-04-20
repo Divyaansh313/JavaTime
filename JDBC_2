@@ -47,3 +47,14 @@ class Second_JDBC
 
 			 se.printStackTrace();
 		}
+	        catch(Exception ex) 
+        { 
+            System.err.println(ex); 
+			System.out.println("connection error");
+        }
+         finally{
+			  
+		 }		
+		
+    } 
+} 
