@@ -42,3 +42,8 @@ class Second_JDBC
 		System.out.println("\nclosing connection...");
 		   con.close();
         }
+
+	catch(SQLException se){
+
+			 se.printStackTrace();
+		}
