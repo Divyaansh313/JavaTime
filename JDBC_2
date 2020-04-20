@@ -14,3 +14,13 @@ class Second_JDBC
 
         Connection con=null;
 		Statement st=null;
+
+	try
+        { 
+            Class.forName("com.mysql.jdbc.Driver");
+  
+            //Reference to connection interface 
+            con = DriverManager.getConnection(url,user,pass); 
+		      System.out.println("connection successfull!");
+			
+			st = con.createStatement();
