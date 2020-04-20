@@ -24,3 +24,10 @@ class Second_JDBC
 		      System.out.println("connection successfull!");
 			
 			st = con.createStatement();
+
+	//query 
+			 String sql = "SELECT * FROM EMPLOYEE";
+			 
+			 //getting query result  from the table
+			  System.out.println("getting query result  from the table...");
+			 ResultSet rs = st.executeQuery(sql);
